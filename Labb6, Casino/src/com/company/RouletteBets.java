@@ -1,6 +1,6 @@
 package com.company;
 
-public class RouletteBets extends Main{
+ class RouletteBets {
     static boolean BetOnGreen = false;
     static boolean BetOnBlack = false;
     static boolean BetOnRed = false;
@@ -11,6 +11,22 @@ public class RouletteBets extends Main{
     static boolean BetOn1st = false;
     static boolean BetOn2nd = false;
     static boolean BetOn3rd = false;
+     public static int userCredits = 500;
+     public static int userBet = 0;
+
+    static void setAllBetsToFalse() {
+        BetOnGreen = false;
+        BetOnBlack = false;
+        BetOnRed = false;
+        BetOnOdds = false;
+        BetOnEvens = false;
+        BetOnTopHalf = false;
+        BetOnBottomHalf = false;
+        BetOn1st = false;
+        BetOn2nd = false;
+        BetOn3rd = false;
+        PanelsAndFrames.resetAllTextFields();
+    }
 
 
 }
